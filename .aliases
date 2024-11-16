@@ -10,6 +10,10 @@ abbr -S .....="cd ../../../.."
 abbr -S ~="cd ~" # `cd` is probably faster to type though
 abbr -S -="cd -"
 
+# ls
+abbr -S -f ls="ls -lG"
+abbr -S la="ls -lGa"
+
 # Git
 function git_current_branch_name() { git rev-parse --abbrev-ref HEAD }
 abbr -S gd='git diff'
