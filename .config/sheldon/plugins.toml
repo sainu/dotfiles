@@ -1,0 +1,13 @@
+shell = "zsh"
+
+[plugins.zsh-abbr]
+github = "olets/zsh-abbr"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+[plugins.zsh-autosuggestions-abbreviations-strategy]
+github = "olets/zsh-autosuggestions-abbreviations-strategy"
+
+[plugins.fast-syntax-highlighting]
+github = "zdharma-continuum/fast-syntax-highlighting"

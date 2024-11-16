@@ -1,0 +1,23 @@
+#!/usr/bin/env zsh
+
+# Make vim the default editor.
+export EDITOR='vim';
+
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
+# Prefer Japanese and use UTF-8.
+export LANG=ja_JP.UTF-8
+
+# Set default options of fzf command
+export FZF_DEFAULT_OPTS='--tmux center --layout=reverse'
+
+# Use bat as a colorizing pager for man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Zsh-abbr Configuration
+# Place the cursor after expanding abbreviations
+export ABBR_SET_EXPANSION_CURSOR=1

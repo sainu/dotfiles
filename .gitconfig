@@ -1,0 +1,72 @@
+[apply]
+
+	# Detect whitespace errors when applying a patch.
+	whitespace = fix
+
+[branch]
+
+	# Show most recently changed branches first.
+	sort = -committerdate
+
+[core]
+
+	excludesfile = ~/.gitignore
+
+	# Use vim as an editor
+	editor = vim
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
+
+[diff]
+
+	# Detect copies as well as renames.
+	renames = copies
+
+[diff "bin"]
+
+	# Use `hexdump` to diff binary files.
+	textconv = hexdump -v -C
+
+[fetch]
+
+	prune = true
+
+[gpg]
+
+	# Use SSH key for commit verification
+	format = ssh
+
+[help]
+
+	# Automatically correct and execute mistyped commands.
+	autocorrect = 1
+
+[merge]
+
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+
+[pull]
+
+	rebase = true
+
+[push]
+
+	# https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
+	autoSetupRemote = true
+	# Make `git push` push relevant annotated tags when pushing branches out.
+	followTags = true
+
+[rebase]
+
+	autoSquash = true
+
+[init]
+
+	defaultBranch = main
+
+[user]
+	signingKey = ~/.ssh/id_ed25519.pub
