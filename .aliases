@@ -10,9 +10,6 @@ abbr -S .....="cd ../../../.."
 abbr -S ~="cd ~" # `cd` is probably faster to type though
 abbr -S -="cd -"
 
-# Shortcuts
-abbr -S dot="cd ~/dotfiles"
-
 # Git
 function git_current_branch_name() { git rev-parse --abbrev-ref HEAD }
 abbr -S gd='git diff'
