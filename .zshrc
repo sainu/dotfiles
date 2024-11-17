@@ -28,6 +28,10 @@ eval "$(sheldon source)"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# === Zsh-abbr configuration
+ABBR_SET_LINE_CURSOR=1
+ABBR_LINE_CURSOR_MARKER='%ABBR_CURSOR_MARKER%'
+
 # === Zsh-abbr integrations
 # https://zsh-abbr.olets.dev/integrations.html
 

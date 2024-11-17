@@ -17,7 +17,3 @@ export FZF_DEFAULT_OPTS='--tmux center --layout=reverse'
 
 # Use bat as a colorizing pager for man
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# Zsh-abbr Configuration
-# Place the cursor after expanding abbreviations
-export ABBR_EXPANSION_CURSOR_MARKER='%ABBR_CURSOR_MARKER%'
