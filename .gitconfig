@@ -39,6 +39,9 @@
 	# Use SSH key for commit verification
 	format = ssh
 
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+
 [help]
 
 	# Automatically correct and execute mistyped commands.
