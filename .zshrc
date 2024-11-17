@@ -8,6 +8,18 @@ autoload -Uz colors; colors
 HISTSIZE=1048576
 SAVEHIST=$HISTSIZE
 HISTFILE=~/.zsh_history
+# Record history with timestamp and duration
+setopt extended_history
+# Delete duplicated history
+setopt hist_ignore_all_dups
+# Delete leading space
+setopt hist_ignore_space
+# Not store `history` command
+setopt hist_no_store
+# Delete unnecessary spaces
+setopt hist_reduce_blanks
+# Write history file when the command finished
+setopt inc_append_history_time
 
 # Load zsh plugin
 # Need to load first for the following scripts
