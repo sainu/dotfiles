@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
-autoload colors
+autoload -Uz colors;
+colors
 
 function print_success_msg() {
 	echo "[$fg[green]SUCCESS$reset_color] $1"
