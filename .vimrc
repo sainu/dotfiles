@@ -160,3 +160,13 @@ set showmode
 set title
 " Show the (partial) command as it’s being typed
 set showcmd
+
+"--------------
+" vim-plug
+"--------------
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+
+call plug#end()
