@@ -28,6 +28,7 @@ function init_ssh_key() {
 		echo "* Upload your SSH public key to your GitHub account? <PUBLIC KEY PATH>"
 		echo "* Title for your SSH key: GitHub CLI"
 		echo "* How would you like to authenticate GitHub CLI? Login with a web browser"
+		print_todo_msg "Run \"git remote set-url origin git@github.com:sainu/dotfiles.git\""
 	fi
 }
 
