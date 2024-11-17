@@ -10,6 +10,7 @@ zsh_scripts=(
 	mas.zsh
 	tmux.zsh
 	ssh.zsh
+	iterm.zsh
 )
 
 for zsh_script in "${zsh_scripts[@]}"; do
