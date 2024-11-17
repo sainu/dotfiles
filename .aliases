@@ -9,6 +9,7 @@ abbr -S ....="cd ../../.."
 abbr -S .....="cd ../../../.."
 abbr -S ~="cd ~" # `cd` is probably faster to type though
 abbr -S -="cd -"
+abbr -S dot="cd ~/dotfiles"
 
 # ls
 abbr -S -f ls="ls -lG"
