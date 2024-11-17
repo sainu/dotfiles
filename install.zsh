@@ -11,6 +11,7 @@ zsh_scripts=(
 	tmux.zsh
 	ssh.zsh
 	iterm.zsh
+	nodejs.zsh
 )
 
 for zsh_script in "${zsh_scripts[@]}"; do
