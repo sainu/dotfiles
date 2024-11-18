@@ -5,8 +5,8 @@ call plug#begin()
 
 " List your plugins here
 Plug 'tpope/vim-sensible'
-" Use the hybrid theme
-Plug 'HoNamDuong/hybrid.nvim'
+" Use the catppuccin theme
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " AI complement. Execute ':Copilot setup' to set up.
 Plug 'github/copilot.vim'
 
@@ -43,7 +43,7 @@ set clipboard=unnamed
 syntax on
 " Use the hybrid theme
 set background=dark
-colorscheme hybrid
+colorscheme catppuccin
 " Highlight current line
 set cursorline
 
