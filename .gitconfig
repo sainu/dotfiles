@@ -10,8 +10,6 @@
 
 [core]
 
-	excludesfile = ~/.gitignore
-
 	# Use vim as an editor
 	editor = vim
 

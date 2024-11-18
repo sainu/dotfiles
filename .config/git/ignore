@@ -1,0 +1,4 @@
+# For MacOS
+.DS_Store
+
+*.log
