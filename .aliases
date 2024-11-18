@@ -15,6 +15,9 @@ abbr -S dot="cd ~/dotfiles"
 abbr -S -f ls="ls -lG"
 abbr -S la="ls -lGa"
 
+# Vim
+abbr -S v='nvim'
+
 # Git
 function git_current_branch_name() { git rev-parse --abbrev-ref HEAD }
 abbr -S gd='git diff'
