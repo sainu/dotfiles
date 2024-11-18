@@ -1,4 +1,18 @@
 "--------------
+" vim-plug
+"--------------
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+" Use the hybrid theme
+Plug 'HoNamDuong/hybrid.nvim'
+" AI complement. Execute ':Copilot setup' to set up.
+Plug 'github/copilot.vim'
+
+call plug#end()
+
+"--------------
 " Backups
 "--------------
 " Centralize backups, swapfiles and undo history
@@ -160,15 +174,3 @@ set showmode
 set title
 " Show the (partial) command as it’s being typed
 set showcmd
-
-"--------------
-" vim-plug
-"--------------
-call plug#begin()
-
-" List your plugins here
-Plug 'tpope/vim-sensible'
-" AI complement. Execute ':Copilot setup' to set up.
-Plug 'github/copilot.vim'
-
-call plug#end()

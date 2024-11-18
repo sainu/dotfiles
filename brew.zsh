@@ -39,6 +39,7 @@ brew_install_if_missing git
 brew_install_if_missing gnupg
 brew_install_if_missing grep
 brew_install_if_missing mas
+brew_install_if_missing neovim
 brew_install_if_missing sheldon
 brew_install_if_missing tree
 brew_install_if_missing tmux
