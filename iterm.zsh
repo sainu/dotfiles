@@ -4,6 +4,7 @@ source './util.zsh'
 
 local schemes=(
 	Hybrid.itermcolors
+	catppuccin-mocha.itermcolors
 )
 
 for scheme in "${schemes[@]}"; do
