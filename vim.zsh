@@ -17,3 +17,4 @@ curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim \
 print_success_msg "vim-plug is downloaded in $$plug_file_path"
 print_todo_msg "Open vim and run setup commands"
 echo "  :PlugInstall"
+echo "  :Copilot setup"

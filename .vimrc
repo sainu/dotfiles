@@ -168,5 +168,7 @@ call plug#begin()
 
 " List your plugins here
 Plug 'tpope/vim-sensible'
+" AI complement. Execute ':Copilot setup' to set up.
+Plug 'github/copilot.vim'
 
 call plug#end()
