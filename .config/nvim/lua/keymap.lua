@@ -2,8 +2,6 @@
 -- 'i' : insert mode
 -- 'x' : visual mode
 
-vim.g.mapleader = ","
-
 -- Indentation
 vim.keymap.set('n', '>', '>>')
 vim.keymap.set('n', '<', '<<')
