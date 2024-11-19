@@ -5,24 +5,24 @@ source ./util.zsh
 # Install command-line tools using Homebrew.
 
 function brew_install_if_missing() {
-	if [[ -z "$1" ]]; then
-		echo "Usage: brew_install_if_missing <package_name>"
-		return 1
-	fi
+  if [[ -z "$1" ]]; then
+    echo "Usage: brew_install_if_missing <package_name>"
+    return 1
+  fi
 
-	local package=$1
+  local package=$1
 
-	if brew list --formula | grep -q "^$package\$"; then
-		print_skip_msg "$package"
-	else
-		print_install_msg "$package"
-		brew install "$package"
-		if [[ $? -eq 0 ]]; then
-			print_success_msg "$package has been successfully installed."
-		else
-			print_failed_msg "Failed to install $package"
-		fi
-	fi
+  if brew list --formula | grep -q "^$package\$"; then
+    print_skip_msg "$package"
+  else
+    print_install_msg "$package"
+    brew install "$package"
+    if [[ $? -eq 0 ]]; then
+      print_success_msg "$package has been successfully installed."
+    else
+      print_failed_msg "Failed to install $package"
+    fi
+  fi
 }
 
 # Make sure we’re using the latest Homebrew.

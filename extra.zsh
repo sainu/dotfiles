@@ -6,8 +6,8 @@ local script_dir=$(dirname "$0")
 local extra_path="$script_dir/.extra"
 
 if [[ -f $extra_path ]]; then
-	print_skip_msg "Create $extra_path"
-	return 0
+  print_skip_msg "Create $extra_path"
+  return 0
 fi
 
 print_create_msg $extra_path

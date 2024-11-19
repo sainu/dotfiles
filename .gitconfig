@@ -1,76 +1,76 @@
 [apply]
 
-	# Detect whitespace errors when applying a patch.
-	whitespace = fix
+  # Detect whitespace errors when applying a patch.
+  whitespace = fix
 
 [branch]
 
-	# Show most recently changed branches first.
-	sort = -committerdate
+  # Show most recently changed branches first.
+  sort = -committerdate
 
 [core]
 
-	# Use vim as an editor
-	editor = vim
+  # Use vim as an editor
+  editor = vim
 
 [commit]
 
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
+  # https://help.github.com/articles/signing-commits-using-gpg/
+  gpgsign = true
 
 [diff]
 
-	# Detect copies as well as renames.
-	renames = copies
+  # Detect copies as well as renames.
+  renames = copies
 
 [diff "bin"]
 
-	# Use `hexdump` to diff binary files.
-	textconv = hexdump -v -C
+  # Use `hexdump` to diff binary files.
+  textconv = hexdump -v -C
 
 [fetch]
 
-	prune = true
+  prune = true
 
 [gpg]
 
-	# Use SSH key for commit verification
-	format = ssh
+  # Use SSH key for commit verification
+  format = ssh
 
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+  allowedSignersFile = ~/.ssh/allowed_signers
 
 [help]
 
-	# Automatically correct and execute mistyped commands.
-	autocorrect = 1
+  # Automatically correct and execute mistyped commands.
+  autocorrect = 1
 
 [merge]
 
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
 
 [pull]
 
-	rebase = true
+  rebase = true
 
 [push]
 
-	# https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
-	autoSetupRemote = true
-	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
+  # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushautoSetupRemote
+  autoSetupRemote = true
+  # Make `git push` push relevant annotated tags when pushing branches out.
+  followTags = true
 
 [rebase]
 
-	autoSquash = true
+  autoSquash = true
 
 [init]
 
-	defaultBranch = main
+  defaultBranch = main
 
 [ui]
-	color = true
+  color = true
 
 [user]
-	signingKey = ~/.ssh/id_ed25519.pub
+  signingKey = ~/.ssh/id_ed25519.pub
