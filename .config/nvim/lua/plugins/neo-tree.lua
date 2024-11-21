@@ -24,5 +24,6 @@ return {
     })
 
     vim.keymap.set('n', '<leader>e', ':Neotree filesystem focus left<CR>', { noremap = true })
+    vim.keymap.set('n', '<leader>b', ':Neotree buffers focus right<CR>', { noremap = true })
   end
 }
