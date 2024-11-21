@@ -32,6 +32,7 @@ brew update
 brew upgrade
 
 brew_install_if_missing bat
+brew_install_if_missing fd # Used by telescope.nvim
 brew_install_if_missing font-hack-nerd-font
 brew_install_if_missing fzf
 brew_install_if_missing gh
