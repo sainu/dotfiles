@@ -7,23 +7,22 @@ return {
     "MunifTanjim/nui.nvim",
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
-  config = function()
-    require("neo-tree").setup({
-      close_if_last_window = true,
-      filesystem = {
-        filtered_items = {
-          hide_dotfiles = false,
-          hide_gitignored = false,
-          never_show = {
-            ".DS_Store",
-          },
-        },
-        follow_current_file = {
-          enabled = true,
+  opts = {
+    close_if_last_window = true,
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        never_show = {
+          ".DS_Store",
         },
       },
-    })
-
-    vim.keymap.set('n', '<leader>e', ':Neotree filesystem focus left<CR>', { noremap = true })
-  end
+      follow_current_file = {
+        enabled = true,
+      },
+    },
+  },
+  keys = {
+    { '<leader>e', ':Neotree filesystem focus left<CR>', noremap = true }
+  },
 }

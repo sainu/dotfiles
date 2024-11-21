@@ -1,3 +1,5 @@
+local builtin = require('telescope.builtin')
+
 return {
   'nvim-telescope/telescope.nvim',
   branch = '0.1.x',
@@ -5,21 +7,20 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
   },
-  config = function()
-    require('telescope').setup({
-      defaults = {
-        layout_strategy = 'vertical',
-      },
-      pickers = {
-        find_files = {
-          hidden = true,
-        }
+  opts = {
+    defaults = {
+      layout_strategy = 'vertical',
+    },
+    pickers = {
+      find_files = {
+        hidden = true,
       }
-    })
-    local builtin = require('telescope.builtin')
-    vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-    vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-    vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-    vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-  end
+    }
+  },
+  keys = {
+    { '<leader>ff', builtin.find_files, desc = 'Telescope find files' },
+    { '<leader>fg', builtin.live_grep, desc = 'Telescope live grep' },
+    { '<leader>fb', builtin.buffers, desc = 'Telescope buffers' },
+    { '<leader>fh', builtin.help_tags, desc = 'Telescope help tags' },
+  },
 }
