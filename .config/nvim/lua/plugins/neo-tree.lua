@@ -17,6 +17,9 @@ return {
             ".DS_Store",
           },
         },
+        follow_current_file = {
+          enabled = true,
+        },
       },
     })
 
