@@ -23,6 +23,6 @@ return {
       },
     })
 
-    vim.keymap.set('n', '<leader>e', ':Neotree filesystem toggle left<CR>', { noremap = true })
+    vim.keymap.set('n', '<leader>e', ':Neotree filesystem focus left<CR>', { noremap = true })
   end
 }
