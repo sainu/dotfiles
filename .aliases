@@ -3,74 +3,74 @@
 # For abbr, see https://zsh-abbr.olets.dev/
 
 # Easier navigation: .., ..., ...., ....., ~ and -
-abbr -S ..="cd .."
-abbr -S ...="cd ../.."
-abbr -S ....="cd ../../.."
-abbr -S .....="cd ../../../.."
-abbr -S ~="cd ~" # `cd` is probably faster to type though
-abbr -S -="cd -"
-abbr -S dot="cd ~/dotfiles"
+abbr -S --quieter ..="cd .."
+abbr -S --quieter ...="cd ../.."
+abbr -S --quieter ....="cd ../../.."
+abbr -S --quieter .....="cd ../../../.."
+abbr -S --quieter ~="cd ~" # `cd` is probably faster to type though
+abbr -S --quieter -="cd -"
+abbr -S --quieter dot="cd ~/dotfiles"
 
 # ls
-abbr -S -f ls="ls -lG"
-abbr -S la="ls -lGa"
+abbr -S --quieter -f ls="ls -lG"
+abbr -S --quieter la="ls -lGa"
 
 # Vim
-abbr -S n='nvim'
+abbr -S --quieter n='nvim'
 
 # Git
 function git_current_branch_name() { git rev-parse --abbrev-ref HEAD }
-abbr -S gd='git diff'
-abbr -S gst='git status'
-abbr -S gb='git branch'
-abbr -S gbd='git branch -D'
-abbr -S gco='git checkout'
-abbr -S gcob='git checkout -b'
-abbr -S gcom='git checkout main'
-abbr -S glg='git log --pretty=format:"%C(yellow)%H%Creset (%G?) %C(green reverse) %an %Creset [%cd] %C(cyan)%ar%Creset %s %C(green)%d%Creset" --date=format:"%Y/%m/%d %H:%M:%S" --graph'
-abbr -S gsta='git stash'
-abbr -S gr='git reset HEAD'
-abbr -S grhch='git reset --hard HEAD^'
-abbr -S grhih='git reset --hard HEAD'
-abbr -S grsch='git reset --soft HEAD^'
-abbr -S ga='git add'
-abbr -S gaa='git add .'
-abbr -S gcm='git commit'
-abbr -S gcmsg='git commit -m "%ABBR_CURSOR_MARKER%"'
-abbr -S gcam='git commit --amend'
-abbr -S gf='git fetch'
-abbr -S gpl='git pull'
-abbr -S gp='git push'
-abbr -S gpf='git push -f'
-abbr -S grb='git rebase'
-abbr -S grbi='git rebase -i'
-abbr -S grbc='git rebase --continue'
-abbr -S grba='git rebase --abort'
-abbr -S grbs='git rebase --skip'
-abbr -S gchp='git cherry-pick'
-abbr -S gchpc='git cherry-pick --continue'
-abbr -S gchpa='git cherry-pick --abort'
-abbr -S gchps='git cherry-pick --skip'
+abbr -S --quieter gd='git diff'
+abbr -S --quieter gst='git status'
+abbr -S --quieter gb='git branch'
+abbr -S --quieter gbd='git branch -D'
+abbr -S --quieter gco='git checkout'
+abbr -S --quieter gcob='git checkout -b'
+abbr -S --quieter gcom='git checkout main'
+abbr -S --quieter glg='git log --pretty=format:"%C(yellow)%H%Creset (%G?) %C(green reverse) %an %Creset [%cd] %C(cyan)%ar%Creset %s %C(green)%d%Creset" --date=format:"%Y/%m/%d %H:%M:%S" --graph'
+abbr -S --quieter gsta='git stash'
+abbr -S --quieter gr='git reset HEAD'
+abbr -S --quieter grhch='git reset --hard HEAD^'
+abbr -S --quieter grhih='git reset --hard HEAD'
+abbr -S --quieter grsch='git reset --soft HEAD^'
+abbr -S --quieter ga='git add'
+abbr -S --quieter gaa='git add .'
+abbr -S --quieter gcm='git commit'
+abbr -S --quieter gcmsg='git commit -m "%ABBR_CURSOR_MARKER%"'
+abbr -S --quieter gcam='git commit --amend'
+abbr -S --quieter gf='git fetch'
+abbr -S --quieter gpl='git pull'
+abbr -S --quieter gp='git push'
+abbr -S --quieter gpf='git push -f'
+abbr -S --quieter grb='git rebase'
+abbr -S --quieter grbi='git rebase -i'
+abbr -S --quieter grbc='git rebase --continue'
+abbr -S --quieter grba='git rebase --abort'
+abbr -S --quieter grbs='git rebase --skip'
+abbr -S --quieter gchp='git cherry-pick'
+abbr -S --quieter gchpc='git cherry-pick --continue'
+abbr -S --quieter gchpa='git cherry-pick --abort'
+abbr -S --quieter gchps='git cherry-pick --skip'
 
 # Tmux
-abbr -S t='tmux'
-abbr -S tl='tmux ls'
-abbr -S ta='tmux a -t'
-abbr -S tre='tmux rename -t'
-abbr -S tk='tmux kill-session -t'
+abbr -S --quieter t='tmux'
+abbr -S --quieter tl='tmux ls'
+abbr -S --quieter ta='tmux a -t'
+abbr -S --quieter tre='tmux rename -t'
+abbr -S --quieter tk='tmux kill-session -t'
 
 # Docker
-abbr -S dk='docker'
-abbr -S dkc='docker compose'
-abbr -S dkcrn='docker compose run --rm'
-abbr -S dkcex='docker compose exec'
-abbr -S dkcrs='docker compose restart'
+abbr -S --quieter dk='docker'
+abbr -S --quieter dkc='docker compose'
+abbr -S --quieter dkcrn='docker compose run --rm'
+abbr -S --quieter dkcex='docker compose exec'
+abbr -S --quieter dkcrs='docker compose restart'
 
 # Software update
-abbr -S update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update;"
+abbr -S --quieter update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update;"
 
 # Reload the shell (i.e. invoke as a login shell)
-abbr -S reload="exec ${SHELL} -l"
+abbr -S --quieter reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
-abbr -S path='echo -e ${PATH//:/\\n}'
+abbr -S --quieter path='echo -e ${PATH//:/\\n}'
