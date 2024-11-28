@@ -10,8 +10,10 @@ function doIt() {
     --exclude="*.zsh" \
     -avh --no-perms . ~;
 
-  print_run_msg "Load .zshrc"
-  source ~/.zshrc;
+  echo ""
+  echo "If the shell should be reloaded, please run the following command:"
+  echo ""
+  echo "  reload"
 }
 
 if [ "$1" = "--force" -o "$1" = "-f" ]; then
