@@ -34,20 +34,20 @@ brew upgrade
 brew_install_if_missing bat
 brew_install_if_missing fd # Used by telescope.nvim
 brew_install_if_missing font-hack-nerd-font
-brew_install_if_missing fzf
+brew_install_if_missing fzf # Fuzzy find history and neovim
 brew_install_if_missing gh
-brew_install_if_missing git
+brew_install_if_missing git # Use the latest version
 brew_install_if_missing gnupg
-brew_install_if_missing grep
-brew_install_if_missing mas
+brew_install_if_missing grep # Use the latest version
+brew_install_if_missing mas # CLI for Mac App Store
 brew_install_if_missing neovim
 brew_install_if_missing ripgrep # Required by telescope.nvim
-brew_install_if_missing sheldon
+brew_install_if_missing sheldon # Zsh Plugin Manager
 brew_install_if_missing tree
 brew_install_if_missing tmux
-brew_install_if_missing vim
+brew_install_if_missing vim # Use the latest version
 brew_install_if_missing wget
-brew_install_if_missing zsh
+brew_install_if_missing zsh # Use the latest version
 
 # Switch to using brew-installed zsh as default shell
 BREW_PREFIX=$(brew --prefix)
