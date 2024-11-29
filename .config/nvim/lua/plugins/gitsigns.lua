@@ -3,8 +3,7 @@ return {
   lazy = false,
   opts = {
     current_line_blame = true,
-    signcolumn = false,
-    numhl = true,
+    signcolumn = true,
   },
   keys = {
     { '<leader>ph', ':Gitsigns preview_hunk<CR>' },
