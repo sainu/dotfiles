@@ -43,6 +43,7 @@ brew_install_if_missing mas # CLI for Mac App Store
 brew_install_if_missing neovim
 brew_install_if_missing ripgrep # Required by telescope.nvim
 brew_install_if_missing sheldon # Zsh Plugin Manager
+brew_install_if_missing sqlite # Use the latest version, required by telescope-all-recent
 brew_install_if_missing tree
 brew_install_if_missing tmux
 brew_install_if_missing vim # Use the latest version
