@@ -15,6 +15,10 @@ return {
     lazy = true,
   },
   {
+    'prochri/telescope-all-recent.nvim',
+    lazy = true,
+  },
+  {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
     cmd = { "Telescope" },
