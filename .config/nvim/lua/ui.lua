@@ -14,3 +14,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 --- Number of spaces that a <Tab> counts for while editing
 vim.opt.softtabstop = 2
+
+-- Maximum width of text that is being inserted
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = '+1'
