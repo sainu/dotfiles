@@ -1,1 +1,4 @@
+# This .gitignore file is for this dotfiles repository only.
+# For a global .gitignore file, see `.config/git/ignore`.
+
 .extra
