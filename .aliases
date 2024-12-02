@@ -68,7 +68,7 @@ abbr -S --quieter dkcex='docker compose exec'
 abbr -S --quieter dkcrs='docker compose restart'
 
 # Software update
-abbr -S --quieter update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update; npm update -g"
+abbr -S --quieter update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update; gh extension upgrade --all; npm update -g"
 
 # Reload the shell (i.e. invoke as a login shell)
 abbr -S --quieter reload="exec ${SHELL} -l"
