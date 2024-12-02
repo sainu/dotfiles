@@ -39,6 +39,7 @@ brew_install_if_missing gh
 brew_install_if_missing git # Use the latest version
 brew_install_if_missing gnupg
 brew_install_if_missing grep # Use the latest version
+brew_install_if_missing lazygit # Rich TUI for Git commands
 brew_install_if_missing mas # CLI for Mac App Store
 brew_install_if_missing neovim
 brew_install_if_missing ripgrep # Required by telescope.nvim
