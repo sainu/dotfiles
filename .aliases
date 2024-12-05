@@ -67,6 +67,8 @@ abbr -S --quieter dkcrn='docker compose run --rm'
 abbr -S --quieter dkcex='docker compose exec'
 abbr -S --quieter dkcrs='docker compose restart'
 
+abbr -S --quieter lg='lazygit'
+
 # Software update
 abbr -S --quieter update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update; gh extension upgrade --all; npm update -g"
 
