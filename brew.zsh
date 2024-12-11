@@ -35,6 +35,7 @@ brew upgrade
 brew_install_if_missing bat # cat alternative
 brew_install_if_missing fd # find alternative. Used by telescope.nvim
 brew_install_if_missing eza # ls alternative
+brew_install_if_missing sd # sed alternative
 
 brew_install_if_missing font-hack-nerd-font
 brew_install_if_missing fzf # Fuzzy find history and neovim
