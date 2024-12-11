@@ -53,6 +53,9 @@ abbr -S --quieter gchpc='git cherry-pick --continue'
 abbr -S --quieter gchpa='git cherry-pick --abort'
 abbr -S --quieter gchps='git cherry-pick --skip'
 
+# Git UI
+abbr -S --quieter gui='gitui'
+
 # Tmux
 abbr -S --quieter t='tmux'
 abbr -S --quieter tl='tmux ls'
@@ -66,8 +69,6 @@ abbr -S --quieter dkc='docker compose'
 abbr -S --quieter dkcrn='docker compose run --rm'
 abbr -S --quieter dkcex='docker compose exec'
 abbr -S --quieter dkcrs='docker compose restart'
-
-abbr -S --quieter lg='lazygit'
 
 # Software update
 abbr -S --quieter update="softwareupdate -i -a; mas upgrade; brew update; brew upgrade; brew cleanup; sheldon lock --update; gh extension upgrade --all; npm update -g"
