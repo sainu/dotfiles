@@ -55,6 +55,7 @@ abbr -S --quieter gchps='git cherry-pick --skip'
 
 # Git UI
 abbr -S --quieter gui='gitui'
+abbr -S --quieter lg='lazygit'
 
 # Tmux
 abbr -S --quieter t='tmux'
