@@ -12,8 +12,8 @@ abbr -S --quieter -="cd -"
 abbr -S --quieter dot="cd ~/dotfiles"
 
 # ls
-abbr -S --quieter -f ls="ls -lG"
-abbr -S --quieter la="ls -lGa"
+abbr -S --quieter -f ls="eza --icons --tree --level=1 --long --header --time-style=long-iso --group-directories-first"
+abbr -S --quieter    la="eza --icons --tree --level=1 --long --header --time-style=long-iso --group-directories-first --all"
 
 # Vim
 abbr -S --quieter n='nvim'
