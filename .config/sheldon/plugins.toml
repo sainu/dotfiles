@@ -11,6 +11,3 @@ github = "olets/zsh-autosuggestions-abbreviations-strategy"
 
 [plugins.fast-syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"
-
-[plugins.spaceship]
-github = "spaceship-prompt/spaceship-prompt"
