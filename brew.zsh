@@ -31,6 +31,10 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# GNU softwares
+brew_install_if_missing gnupg
+brew_install_if_missing grep
+
 # Alternatives made with Rust
 brew_install_if_missing bat # cat alternative
 brew_install_if_missing fd # find alternative. Used by telescope.nvim
@@ -43,8 +47,6 @@ brew_install_if_missing font-hack-nerd-font
 brew_install_if_missing fzf # Fuzzy find history and neovim
 brew_install_if_missing gh
 brew_install_if_missing git # Use the latest version
-brew_install_if_missing gnupg
-brew_install_if_missing grep # Use the latest version
 brew_install_if_missing lazygit # Git TUI. Will be deleted if gitui supports ssh-agent https://github.com/extrawurst/gitui/issues/2378
 brew_install_if_missing mas # CLI for Mac App Store
 brew_install_if_missing neovim
