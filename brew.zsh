@@ -34,6 +34,7 @@ brew upgrade
 # GNU softwares
 brew_install_if_missing gnupg
 brew_install_if_missing grep
+brew_install_if_missing gnu-tar
 
 # Alternatives made with Rust
 brew_install_if_missing bat # cat alternative
