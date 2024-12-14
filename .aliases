@@ -10,6 +10,7 @@ abbr -S --quieter .....="cd ../../../.."
 abbr -S --quieter ~="cd ~" # `cd` is probably faster to type though
 abbr -S --quieter -="cd -"
 abbr -S --quieter dot="cd ~/dotfiles"
+abbr -S --quieter dl="cd ~/Downloads"
 
 # ls
 abbr -S --quieter -f ls="eza --icons --tree --level=1 --long --header --time-style=long-iso --group-directories-first"
