@@ -35,6 +35,7 @@ done
 
 INSTALL_APPS=(
   539883307 # LINE
+  457622435 # Yoink
 )
 
 echo "=== Install my favorite apps"
