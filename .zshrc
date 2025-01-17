@@ -31,6 +31,9 @@ source <(fzf --zsh)
 # Set up starship
 eval "$(starship init zsh)"
 
+# Set up fnm
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # === Zsh-abbr configuration
 ABBR_SET_LINE_CURSOR=1
 ABBR_LINE_CURSOR_MARKER='%ABBR_CURSOR_MARKER%'
