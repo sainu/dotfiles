@@ -13,6 +13,7 @@ zsh_scripts=(
   iterm.zsh
   nodejs.zsh
   java.zsh
+  python.zsh
 )
 
 for zsh_script in "${zsh_scripts[@]}"; do
