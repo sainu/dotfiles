@@ -46,6 +46,7 @@ brew_install_if_missing starship # spaceship alternative. Prompt
 
 brew_install_if_missing font-hack-nerd-font
 brew_install_if_missing fzf # Fuzzy find history and neovim
+brew_install_if_missing direnv
 brew_install_if_missing gh
 brew_install_if_missing git # Use the latest version
 brew_install_if_missing lazygit # Git TUI. Will be deleted if gitui supports ssh-agent https://github.com/extrawurst/gitui/issues/2378
