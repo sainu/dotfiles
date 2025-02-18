@@ -61,6 +61,8 @@ brew_install_if_missing vim # Use the latest version
 brew_install_if_missing wget
 brew_install_if_missing zsh # Use the latest version
 
+brew_install_if_missing pyenv
+
 # Switch to using brew-installed zsh as default shell
 BREW_PREFIX=$(brew --prefix)
 if ! grep -Fq "${BREW_PREFIX}/bin/zsh" /etc/shells; then
