@@ -38,5 +38,6 @@ brew_install_cask_if_missing cursor
 brew_install_cask_if_missing docker
 brew_install_cask_if_missing google-chrome
 brew_install_cask_if_missing iterm2
+brew_install_cask_if_missing slack
 brew_install_cask_if_missing karabiner-elements
 brew_install_cask_if_missing 1password
