@@ -34,10 +34,9 @@ brew upgrade
 
 brew_install_cask_if_missing alfred
 brew_install_cask_if_missing alt-tab
-brew_install_cask_if_missing arc
+brew_install_cask_if_missing cursor
 brew_install_cask_if_missing docker
 brew_install_cask_if_missing google-chrome
 brew_install_cask_if_missing iterm2
 brew_install_cask_if_missing karabiner-elements
-brew_install_cask_if_missing visual-studio-code
 brew_install_cask_if_missing 1password
