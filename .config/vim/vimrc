@@ -1,0 +1,13 @@
+" =========================
+" macOS clipboard (Vim)
+" =========================
+
+" デフォルトのヤンク/ペーストを macOS クリップボード(+)に接続
+set clipboard=unnamedplus
+
+" 念のため：`"+y` を押しやすいようにショートカット（任意）
+" Visual 選択中に y でクリップボードへ
+vnoremap y "+y
+" Normal で p でクリップボードから貼り付け
+nnoremap p "+p
+nnoremap P "+P
