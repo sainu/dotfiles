@@ -21,6 +21,19 @@ setopt hist_reduce_blanks
 # Write history file when the command finished
 setopt inc_append_history_time
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+HOMEBREW_PREFIX=$(brew --prefix)
+
+export PATH="$HOMEBREW_PREFIX/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/findutils/libexec/gnubin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/ssh-copy-id/bin:$PATH"
+
+# Claude Code CLI
+export PATH="$HOME/.local/bin:$PATH"
+
 # Load zsh plugin
 # Need to load first for the following scripts
 eval "$(sheldon source)"
