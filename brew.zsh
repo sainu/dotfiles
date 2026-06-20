@@ -49,6 +49,7 @@ brew_install_if_missing direnv
 brew_install_if_missing gh # GitHub CLI
 brew_install_if_missing git # Use the latest version
 brew_install_if_missing lazygit # Git TUI. Will be deleted if gitui supports ssh-agent https://github.com/extrawurst/gitui/issues/2378
+brew_install_if_missing ngrok
 brew_install_if_missing mas # CLI for Mac App Store
 brew_install_if_missing sheldon # Zsh Plugin Manager
 brew_install_if_missing tree
